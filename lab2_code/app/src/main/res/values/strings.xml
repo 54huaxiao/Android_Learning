@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">week2</string>
+    <string name="title">中山大学课外体育积分电子认证系统</string>
+    <string name="user">用户名:</string>
+    <string name="psd">密码:</string>
+    <string name="stu">学生</string>
+    <string name="teacher">老师</string>
+    <string name="group">社团</string>
+    <string name="admin">管理者</string>
+    <string name="usermsg">请输入用户名</string>
+    <string name="pswmsg">请输入密码</string>
+    <string name="register">注册</string>
+    <string name="login">登录</string>
+    <string name="base">基础</string>
+    <string name="upgrade">拓展</string>
+</resources>
