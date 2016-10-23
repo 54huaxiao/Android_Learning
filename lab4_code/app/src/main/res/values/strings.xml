@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Lab4</string>
+    <string name="s_broadcast">静态注册</string>
+    <string name="d_broadcast">动态注册</string>
+    <string name="Register">Register Broadcast</string>
+    <string name="send">Send</string>
+</resources>
