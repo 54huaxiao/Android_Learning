@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.vincent.lab4">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/banana"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".StaticActivity"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".DynamicActivity"
+            android:launchMode="singleInstance" />
+
+        <!--<receiver-->
+            <!--android:name=".StaticBroadcast"-->
+            <!--android:enabled="true"-->
+            <!--android:exported="true">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="com.example.vincent.lab4.MyBroadcast" />-->
+            <!--</intent-filter>-->
+        <!--</receiver>-->
+        <receiver android:name=".WidgetDemo">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.example.vincent.lab4.MyBroadcast" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_demo_info" />
+        </receiver>
+    </application>
+
+</manifest>
